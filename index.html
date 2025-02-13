@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #121212;
+            color: white;
+        }
+
+        /* Home Page */
+        #home-container {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: none;
+            background: #ff5722;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e64a19;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="home-container">
+        <h1>Welcome to Random P2P Chat</h1>
+        <p>Chat anonymously with a random person using a secure peer-to-peer connection.</p>
+        <button id="connect-button">Connect Randomly</button>
+    </div>
+
+    <script>
+        document.getElementById("connect-button").onclick = function() {
+            window.location.href = "./chat.html"; // Redirect to chat page
+        };
+    </script>
+</body>
+</html>
